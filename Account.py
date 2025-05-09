@@ -1,7 +1,7 @@
 class Account:
 
     def __init__(self):
-        self.customer = None
+        self.customer = None #customer class
         self.balance = 0
         self.interest_rate = 0.05
 

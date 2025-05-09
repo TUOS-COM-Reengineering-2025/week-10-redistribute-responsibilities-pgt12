@@ -9,10 +9,10 @@ class Bank:
     def __init__(self):
         self.accounts = []
         self.customers = []
-        self.customer_addresses = {}  # key: customer, value: address
-        self.customer_phone_numbers = {}  # key: customer, value: phone number
+        self.customer_addresses = {}  # key: customer, value: address -- can be put in customer class - u
+        self.customer_phone_numbers = {}  # key: customer, value: phone number -- can be put in customer class - u
         self.branches = []
-        self.branch_opening_times = {}  # key: branch, value: opening time
+        self.branch_opening_times = {}  # key: branch, value: opening time #branches
         self.payroll = None
 
     def setup_branch(self, branch: Branch):
@@ -28,7 +28,7 @@ class Bank:
         from_branch.get_staff().remove(staff)
         to_branch.get_staff().append(staff)
 
-    def setup_new_account(self, account: Account, customer: Customer):
+    def setup_new_account(self, account: Account, customer: Customer): #account can have customer
         account.set_customer(customer)
         self.accounts.append(account)
 
