@@ -3,6 +3,7 @@ from PaySchedule import PaySchedule
 
 class Payroll:
     def __init__(self):
+        # map
         self.staff_category_pay_schedules = {"Manager": PaySchedule("1st")} #change into enum
 
     def get_staff_category_pay_schedule(self, staff_category):
